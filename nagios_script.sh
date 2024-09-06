@@ -2,9 +2,9 @@
 
 yum install nagios-plugins-all nagios-plugins-nrpe nrpe
 cp /etc/nagios/nrpe.cfg /etc/nagios/nrpe.cfg.bkp
-cp nrpe.cfg /etc/nagios/nrpe
-cp nagios/* /usr/lib64/nagios/plugins/
-chmod 0755 check_*
+cp nrpe.cfg /etc/nagios/nrpe.cfg
+cp check_* /usr/lib64/nagios/plugins/
+chmod 0755 /usr/lib64/nagios/plugins/check_*
 systemctl restart nrpe
 systemctl status nrpe
 
