@@ -1,6 +1,6 @@
 #!/bin/bash
 
-yum install nagios-plugins-all nagios-plugins-nrpe nrpe
+yum install nagios-plugins-all nagios-plugins-nrpe nrpe -y
 cp /etc/nagios/nrpe.cfg /etc/nagios/nrpe.cfg.bkp
 cp nrpe.cfg /etc/nagios/nrpe.cfg
 cp check_* /usr/lib64/nagios/plugins/
