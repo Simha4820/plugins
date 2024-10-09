@@ -1,4 +1,3 @@
-def test(){
+def test():
   print("Hello World !")
-}
 test()
